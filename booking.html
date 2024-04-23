@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interior Design Booking</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #c2d5ed, #e9afe8);
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #595757;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff6600;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #cc5500;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome to Luxe living Interiors</h2>
+        <h3>Book Your Consultation</h3>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address">
+            </div>
+            <div class="form-group">
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="time">Preferred Time:</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+            <div class="form-group">
+                <label>Type of Service:</label><br>
+                <input type="checkbox" id="residential" name="service" value="Residential Interior Design">
+                <label for="residential">Residential Interior Design</label><br>
+                <input type="checkbox" id="commercial" name="service" value="Commercial Interior Design">
+                <label for="commercial">Commercial Interior Design</label><br>
+                <input type="checkbox" id="remodeling" name="service" value="Remodeling/Redesign">
+                <label for="remodeling">Remodeling/Redesign</label><br>
+                <input type="checkbox" id="furniture" name="service" value="Furniture Selection">
+                <label for="furniture">Furniture Selection</label><br>
+                <input type="checkbox" id="color" name="service" value="Color Consultation">
+                <label for="color">Color Consultation</label><br>
+                <input type="checkbox" id="other" name="service" value="Other">
+                <label for="other">Other (Please specify)</label><br>
+            </div>
+            <div class="form-group">
+                <label for="project">Brief Description of Project:</label>
+                <textarea id="project" name="project" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="requirements">Any Specific Requests or Requirements:</label>
+                <textarea id="requirements" name="requirements" rows="4"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
